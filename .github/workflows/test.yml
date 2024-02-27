@@ -1,0 +1,29 @@
+# yaml-language-server: https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/github-workflow.json
+---
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**.go"
+      - "go.mod"
+      - "go.sum"
+  workflow_dispatch:
+
+jobs:
+  test-mac:
+    runs-on: macos-latest
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          cache: true
+          go-version: stable
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: go build ./...
+      - name: Test
+        run: go test ./... -v
