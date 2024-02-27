@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://goreleaser.com/static/schema.json
+---
+builds:
+  - binary: drop
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+
+checksum:
+  name_template: "checksums.txt"
+  algorithm: sha256
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: false
+    mod_timestamp: "{{ .CommitTimestamp }}"
+
+brews:
+  - name: drop
+    homepage: https://github.com/Frank-Mayer/drop
+    description: "drop is a replacement for the GNU `rm` command"
+    repository:
+      owner: Frank-Mayer
+      name: homebrew-tap
+    commit_author:
+      name: Frank-Mayer
+      email: gh@frankmayer.dev
