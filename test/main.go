@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Frank-Mayer/drop/internal/git"
+	"github.com/tsukinoko-kun/drop/internal/git"
 )
 
 func main() {

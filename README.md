@@ -11,12 +11,12 @@ drop is a replacement for the GNU `rm` command.
 ### Using Go install
 
 ```bash
-go install github.com/Frank-Mayer/drop@latest
+go install github.com/tsukinoko-kun/drop@latest
 ```
 
 ### Using Homebrew
 
 ```bash
-brew tap Frank-Mayer/tap
-brew install Frank-Mayer/tap/drop
+brew tap tsukinoko-kun/tap
+brew install tsukinoko-kun/tap/drop
 ```

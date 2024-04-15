@@ -9,8 +9,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Frank-Mayer/drop/internal/git"
-	"github.com/Frank-Mayer/drop/internal/ui"
+	"github.com/tsukinoko-kun/drop/internal/git"
+	"github.com/tsukinoko-kun/drop/internal/ui"
 	"github.com/spf13/cobra"
 )
 
