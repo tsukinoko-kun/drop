@@ -25,11 +25,11 @@ universal_binaries:
 
 brews:
   - name: drop
-    homepage: https://github.com/Frank-Mayer/drop
+    homepage: https://github.com/tsukinoko-kun/drop
     description: "drop is a replacement for the GNU `rm` command"
     repository:
-      owner: Frank-Mayer
+      owner: tsukinoko-kun
       name: homebrew-tap
     commit_author:
-      name: Frank-Mayer
+      name: tsukinoko-kun
       email: gh@frankmayer.dev
